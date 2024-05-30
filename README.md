@@ -10,8 +10,8 @@
 5. actualmente en el modulo de appTracked, todos los cambios en la base de datos ISAR se escuchan en tiempo real, por lo cual al eliminar una app a trackear se puede notar una pequeña carga.
 
 ## Problemas no resueltos y principales retos.
-como e comentado, no me fue posible terminar la aplicacion, ya que en flutter para saber y trackear otras apps, se debe de ahcer uso de codigo nativo Kotlin o Java, atraves de Method Channels, y asi poder escuchar eventos propios de ANDROID( eejemplo AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED ),
-habian otras formas de trackearlas indirectamente utilizando paquetes como Use_stats, los cuales te devolvia unas metricas de usos de la app, pero mi deseo de dominar los Method channels me hizo posponerlo.
+como e comentado, no me fue posible terminar la aplicacion, ya que en flutter para saber y trackear otras apps, se debe de hacer uso de codigo nativo Kotlin o Java, atraves de Method Channels, y asi poder escuchar eventos propios de ANDROID( ejemplo AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED ),
+habian otras formas de trackearlas indirectamente utilizando paquetes como Use_stats, los cuales te devolvia unas metricas de usos de la app(no muy exactas, por ende no opte tanto por ellas)
 
 al no haberme adentrado antes en funciones puristas de android no me habia topado con estos problemas, los cuales me llevaron a crear distintos proyectos, para mirar como configurar un background services o un method channel, en todos fracase, ya que no me daban el resultado esperado(supongo que era por estar tan crudo en el tema).
 
